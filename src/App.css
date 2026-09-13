@@ -592,6 +592,106 @@
   gap: 18px;
 }
 
+@media (max-width: 980px) {
+  .navbar {
+    height: auto;
+    padding: 14px 0;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-section,
+  .catalog-section,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    min-height: unset;
+    padding-top: 8px;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stack-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 20px, 1200px);
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .filled-btn,
+  .secondary-btn,
+  .primary-btn {
+    padding: 10px 14px;
+    min-height: 40px;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2,
+  .faq-head h3 {
+    font-size: 24px;
+  }
+
+  .faq-item {
+    padding: 0 14px;
+  }
+
+  .faq-item summary {
+    padding-right: 22px;
+  }
+
+  .site-footer {
+    margin-top: 24px;
+  }
+
+  .footer-grid {
+    gap: 22px;
+    padding-top: 26px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
