@@ -7,6 +7,29 @@ import './App.css'
 
 const navItems = ['Home', 'Technologies', 'Projects', 'About', 'Contact']
 
+const faqItems = [
+  {
+    question: 'Where can we deploy the site?',
+    answer:
+      'Anywhere you like — Netlify, Vercel, Cloudflare Pages, or any other host. There is no fixed platform.',
+  },
+  {
+    question: 'Do we have to use TypeScript?',
+    answer:
+      'No. You can use TypeScript or JavaScript. If you want to build the whole project in plain JavaScript, that is completely fine.',
+  },
+  {
+    question: 'Can we change the title, logo, and colors?',
+    answer:
+      'Yes. The project title, logo, and color scheme are all yours to change — just keep them relevant to the project. Do not use random or gobindo colors and do not put an unrelated title or logo.',
+  },
+  {
+    question: 'Where do we get the technology logos/icons?',
+    answer:
+      'You can use image URLs from Google or from anywhere you like. A good source with clean, ready-to-use tech logos is https://techicons.dev/ — copy the icon URL from there and put it in your JSON data.',
+  },
+]
+
 function App() {
   const [technologies, setTechnologies] = useState([])
   const [stack, setStack] = useState([])
@@ -201,6 +224,22 @@ function App() {
               </div>
             )}
           </aside>
+        </section>
+
+        <section className="faq-section">
+          <div className="faq-head">
+            <p className="faq-tag">FAQ</p>
+            <h3>Everything you need to know</h3>
+          </div>
+
+          <div className="faq-list">
+            {faqItems.map((item, index) => (
+              <details key={item.question} className="faq-item" open={index === 0}>
+                <summary>{item.question}</summary>
+                <p>{item.answer}</p>
+              </details>
+            ))}
+          </div>
         </section>
       </main>
 
