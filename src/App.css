@@ -34,11 +34,34 @@
 .brand-box {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
-.brand-logo {
-  width: 130px;
-  height: auto;
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff7a18, #ff4d8d, #7a5cff);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(151, 92, 255, 0.25);
+}
+
+.brand-mark.small {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+.brand-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
 }
 
 .main-nav {
@@ -47,9 +70,10 @@
 }
 
 .main-nav a {
-  font-size: 14px;
+  font-size: 15px;
   color: #374151;
   text-decoration: none;
+  font-weight: 500;
   transition: color 0.2s ease;
 }
 
@@ -83,6 +107,7 @@
   border: none;
   color: #111827;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .filled-btn,
@@ -135,10 +160,11 @@
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 3vw, 4rem);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  font-size: clamp(3rem, 4vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
   color: #111827;
+  font-weight: 800;
 }
 
 .highlight {
@@ -151,15 +177,17 @@
 .hero-text {
   margin-top: 18px;
   color: #4b5563;
-  font-size: 16px;
-  line-height: 1.7;
-  max-width: 520px;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 620px;
+  letter-spacing: -0.01em;
 }
 
 .hero-buttons {
   display: flex;
   gap: 12px;
   margin-top: 28px;
+  justify-content: flex-start;
 }
 
 .hero-visual {
@@ -465,17 +493,18 @@
 
 .faq-tag {
   margin: 0 0 10px;
-  color: #ef079d;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  color: var(--brand-pink);
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  text-transform: none;
 }
 
-.faq-head h3 {
+.faq-subtitle {
   margin: 0;
-  font-size: 30px;
-  color: #111827;
+  font-size: 18px;
+  color: #5a6474;
 }
 
 .faq-list {
@@ -541,6 +570,12 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 26px;
   padding: 32px 0 18px;
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer-brand p {

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import logo from './assets/logo-text.png'
 import heroImage from './assets/banner-stack.png'
 import './App.css'
 
@@ -84,7 +83,8 @@ function App() {
       <header className="topbar">
         <div className="container navbar">
           <div className="brand-box">
-            <img src={logo} alt="Dev Stack" className="brand-logo" />
+            <div className="brand-mark">DS</div>
+            <span className="brand-text">Dev Stack</span>
           </div>
 
           <nav className="main-nav" aria-label="Main navigation">
@@ -110,7 +110,8 @@ function App() {
         <section className="hero-section">
           <div className="hero-copy">
             <h1>
-              Build Your Ideal <span className="highlight">Development Stack</span>
+              Build Your Ideal
+              <span className="highlight">Development Stack</span>
             </h1>
             <p className="hero-text">
               Explore frontend, backend, database, and tooling options to compare them and
@@ -232,8 +233,8 @@ function App() {
 
         <section className="faq-section">
           <div className="faq-head">
-            <p className="faq-tag">FAQ</p>
-            <h3>Everything you need to know</h3>
+            <p className="faq-tag">Common FAQ</p>
+            <p className="faq-subtitle">Frequently asked questions about Dev Stack.</p>
           </div>
 
           <div className="faq-list">
@@ -250,7 +251,10 @@ function App() {
       <footer className="site-footer">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <img src={logo} alt="Dev Stack" className="footer-logo" />
+            <div className="footer-brand-row">
+              <div className="brand-mark small">DS</div>
+              <span className="brand-text">Dev Stack</span>
+            </div>
             <p>Curated tools and technologies for developers building modern software.</p>
             <div className="social-links">
               <a href="#">GitHub</a>
