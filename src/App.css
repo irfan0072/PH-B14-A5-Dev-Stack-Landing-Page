@@ -31,6 +31,19 @@
   padding: 0 4px;
 }
 
+.mobile-menu-btn {
+  display: none;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #111827;
+  border-radius: 10px;
+  width: 38px;
+  height: 38px;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .brand-box {
   display: flex;
   align-items: center;
@@ -681,6 +694,20 @@
 
   .navbar {
     justify-content: space-between;
+    gap: 12px;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+  }
+
+  .brand-box {
+    order: 2;
+    justify-content: center;
+    flex: 1;
   }
 
   .main-nav {
@@ -688,6 +715,7 @@
   }
 
   .nav-actions {
+    order: 3;
     gap: 8px;
   }
 

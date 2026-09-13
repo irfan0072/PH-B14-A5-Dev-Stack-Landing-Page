@@ -82,6 +82,10 @@ function App() {
     <div className="app-shell">
       <header className="topbar">
         <div className="container navbar">
+          <button type="button" className="mobile-menu-btn" aria-label="Open menu">
+            ☰
+          </button>
+
           <div className="brand-box">
             <div className="brand-mark">DS</div>
             <span className="brand-text">Dev Stack</span>
