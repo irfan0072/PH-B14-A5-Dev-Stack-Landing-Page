@@ -10,22 +10,22 @@ const faqItems = [
   {
     question: 'Where can we deploy the site?',
     answer:
-      'Anywhere you like — Netlify, Vercel, Cloudflare Pages, or any other host. There is no fixed platform.',
+      'You can deploy the site anywhere you like, such as Netlify, Vercel, Cloudflare Pages, or any other hosting platform.',
   },
   {
     question: 'Do we have to use TypeScript?',
     answer:
-      'No. You can use TypeScript or JavaScript. If you want to build the whole project in plain JavaScript, that is completely fine.',
+      'No. You can use either TypeScript or JavaScript. This project is built using TypeScript.',
   },
   {
     question: 'Can we change the title, logo, and colors?',
     answer:
-      'Yes. The project title, logo, and color scheme are all yours to change — just keep them relevant to the project. Do not use random or gobindo colors and do not put an unrelated title or logo.',
+      'Yes. You can change the project title, logo, and color scheme as long as they remain relevant to the project.',
   },
   {
-    question: 'Where do we get the technology logos/icons?',
+    question: 'Where do we get the technology logos and icons?',
     answer:
-      'You can use image URLs from Google or from anywhere you like. A good source with clean, ready-to-use tech logos is https://techicons.dev/ — copy the icon URL from there and put it in your JSON data.',
+      'You can use technology icon URLs from different sources. TechIcons is one useful source for clean technology logos.',
   },
 ]
 
@@ -111,6 +111,7 @@ function App() {
           <div className="hero-copy">
             <h1>
               Build Your Ideal
+              <br />
               <span className="highlight">Development Stack</span>
             </h1>
             <p className="hero-text">
@@ -139,6 +140,7 @@ function App() {
               <h2>
                 Explore the <span className="highlight">Technologies</span>
               </h2>
+              <p className="section-small-text">Pick technologies to build your ideal development stack.</p>
             </div>
 
             {loading ? (

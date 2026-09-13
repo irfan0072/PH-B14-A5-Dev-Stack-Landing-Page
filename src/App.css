@@ -213,6 +213,13 @@
   color: #111827;
 }
 
+.section-small-text {
+  margin: 0 0 18px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
