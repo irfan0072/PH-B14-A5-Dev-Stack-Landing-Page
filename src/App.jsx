@@ -42,7 +42,7 @@ function App() {
         const data = await response.json()
         setTechnologies(data)
       } catch (error) {
-        toast.error('Unable to load technology list.')
+        toast.error('Unable to load technology list.', { toastId: 'load-error' })
       } finally {
         setLoading(false)
       }
@@ -56,23 +56,27 @@ function App() {
       const alreadyAdded = currentStack.some((item) => item.id === technology.id)
 
       if (alreadyAdded) {
-        toast.warn(`${technology.name} is already in your stack.`)
+        toast.warn(`${technology.name} is already in your stack.`, {
+          toastId: `duplicate-${technology.id}`,
+        })
         return currentStack
       }
 
-      toast.success(`${technology.name} added to your stack.`)
+      toast.success(`${technology.name} added to your stack.`, {
+        toastId: `add-${technology.id}`,
+      })
       return [...currentStack, technology]
     })
   }
 
   function removeFromStack(id, name) {
     setStack((currentStack) => currentStack.filter((item) => item.id !== id))
-    toast.info(`${name} removed from your stack.`)
+    toast.info(`${name} removed from your stack.`, { toastId: `remove-${id}` })
   }
 
   function removeAll() {
     setStack([])
-    toast.info('All technologies removed from your stack.')
+    toast.info('All technologies removed from your stack.', { toastId: 'remove-all' })
   }
 
   return (
