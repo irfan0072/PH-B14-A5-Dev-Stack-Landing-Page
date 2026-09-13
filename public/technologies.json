@@ -24,7 +24,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework that speeds up page design with reusable classes.",
-    "icon": "https://icon.icepanel.io/Technology/svg/TailwindCSS.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"
@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful SQL database known for reliability, speed, and data integrity.",
-    "icon": "https://icon.icepanel.io/Technology/svg/PostgreSQL.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
