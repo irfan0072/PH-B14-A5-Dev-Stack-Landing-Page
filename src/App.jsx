@@ -243,6 +243,51 @@ function App() {
         </section>
       </main>
 
+      <footer className="site-footer">
+        <div className="container footer-grid">
+          <div className="footer-brand">
+            <img src={logo} alt="Dev Stack" className="footer-logo" />
+            <p>Curated tools and technologies for developers building modern software.</p>
+            <div className="social-links">
+              <a href="#">GitHub</a>
+              <a href="#">Twitter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+
+          <div className="footer-links">
+            <h4>Product</h4>
+            <a href="#">Home</a>
+            <a href="#">Technologies</a>
+            <a href="#">Projects</a>
+          </div>
+
+          <div className="footer-links">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+          </div>
+
+          <div className="footer-links">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <div className="container footer-bottom-inner">
+            <span>© 2026 Dev Stack. All rights reserved.</span>
+            <div>
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
       <ToastContainer position="bottom-right" autoClose={2000} hideProgressBar />
     </div>
   )

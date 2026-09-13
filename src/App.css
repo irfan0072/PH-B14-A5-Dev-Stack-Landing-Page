@@ -465,6 +465,73 @@
   line-height: 1.7;
 }
 
+.site-footer {
+  margin-top: 30px;
+  background: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 26px;
+  padding: 32px 0 18px;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.footer-logo {
+  width: 140px;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.social-links a,
+.footer-links a,
+.footer-bottom a {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links h4 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.footer-bottom {
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px 0;
+  color: #4b5563;
+}
+
+.footer-bottom-inner div {
+  display: flex;
+  gap: 18px;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
